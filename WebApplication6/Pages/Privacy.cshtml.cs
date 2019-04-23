@@ -9,8 +9,9 @@ namespace WebApplication6.Pages
 {
     using Microsoft.AspNetCore.Authorization;
 
-    //[Authorize(Policy = "AdminAccess")]
-    [Authorize(Roles = "Test")]
+    //[Authorize(Policy = "AdminAccess")] // Access Granted
+    //[Authorize(Roles = "Test")] // Access Denied
+    [Authorize(Roles = "Admin")] // Access Granted
     public class PrivacyModel : PageModel
     {
         public void OnGet()

@@ -25,16 +25,9 @@ namespace WebApplication6.Pages
         {
             if (User.IsInRole("Admin"))
             {
+                // You can set a breakpoint here to verify this is working
                 Console.WriteLine("Success");
             }
-
-            //if (User == null) return Page();
-
-            //if (!await userManager.IsInRoleAsync(await userManager.FindByNameAsync(User.Identity.Name), "Admin"))
-            //{
-            //    await roleManager.CreateAsync(new IdentityRole("Admin"));
-            //    await userManager.AddToRoleAsync(await userManager.FindByNameAsync(User.Identity.Name), "Admin");
-            //}
 
             return Page();
         }
